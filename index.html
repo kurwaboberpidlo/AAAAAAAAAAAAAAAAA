@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Упражнение "Память на числа"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Упражнение "Память на числа"</h2>
+    <p>Цель: Оценка кратковременной зрительной памяти</p>
+    <p>Инструкция: "Вам будет предъявлена таблица с числами. Ваша задача заключается в том, чтобы за 20 сек., запомнить как можно больше чисел. Через 20 сек. таблицу уберут, и вы должны будете записать те числа, которые вы запомнили".</p>
+
+    <button id="start" onclick="startExercise()">Начать упражнение</button>
+
+    <table id="number-table" class="number-table" style="display:none;">
+        <tr>
+            <td>13</td><td>91</td><td>47</td><td>39</td>
+        </tr>
+        <tr>
+            <td>65</td><td>83</td><td>19</td><td>51</td>
+        </tr>
+        <tr>
+            <td>23</td><td>94</td><td>71</td><td>87</td>
+        </tr>
+        <tr>
+            <td>55</td><td>67</td><td>81</td><td>24</td>
+        </tr>
+    </table>
+
+    <div id="user-input" style="display:none;">
+        <p>Введите запомненные числа:</p>
+        <input type="text" id="numbers-input" placeholder="Например, 13 91 47...">
+        <button class="check" onclick="checkResults()">Проверить</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
